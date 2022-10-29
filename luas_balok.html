@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Kalkulator Balok</title>
+</head>
+
+<body>
+    <h1> Luas Balok </h1>
+    <b> Panjang = </b><input type="number" id="panjang"></br>
+    <b> Lebar = </b><input type="number" id="lebar"></br>
+    <b> Tinggi = </b><input type-="number" id="tinggi"></br>
+    <button type="button" onclick="luasbalok()"> Hitung Luas </button>
+
+    <h2> Hasil </h2>
+    <p id="hasil"></p>
+
+    <script>
+        function luasbalok() {
+            panjang = document.getElementById("panjang").value;
+            lebar = document.getElementById("lebar").value;
+            tinggi = document.getElementById("tinggi").value;
+
+            let luasbalok = panjang * lebar * tinggi;
+            document.getElementById("hasil").innerHTML = luasbalok;
+        }
+    </script>
+
+</body>
+
+</html>
