@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>On/Off Lampu</title>
+</head>
+<body>
+    <img id = "lampu" src="https://png.pngtree.com/element_our/20190529/ourlarge/pngtree-earth-off-lights-for-1-hour-image_1187267.jpg" height="25%" width="25%"><br>
+    <button type="button" onclick="Lampunyala()">Nyalakan lampu</button>
+    <button type="button" onclick="Lampumati()">Matikan Lampu</button><br>
+
+    <script>
+        var image = document.getElementById("lampu");
+        function Lampunyala(){
+            image.src= "https://png.pngtree.com/png-clipart/20220901/ourmid/pngtree-cartoon-glowing-yellow-light-bulb-vector-illustration-png-image_6133522.png";
+        }
+        function Lampumati(){
+            image.src = "https://png.pngtree.com/element_our/20190529/ourlarge/pngtree-earth-off-lights-for-1-hour-image_1187267.jpg";
+        }
+    </script>
+
+
+</body>
+</html>
