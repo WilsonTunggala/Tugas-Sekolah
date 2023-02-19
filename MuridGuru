@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+
+class siswa{
+    public:
+        string NAMA;
+        int NISN;
+        float NILAI;
+    void printmurid(){
+        cout<<"Masukkan Nama : ";  cin>>NAMA;
+        cout<<"Masukkan NISN : ";  cin>>NISN;
+        cout<<"Masukkan Nilai : "; cin>>NILAI;
+    }
+    void printdatamurid(){
+        cout<<"Nama : "  <<NAMA<<endl;
+        cout<<"NISN : "  <<NISN<<endl;
+        cout<<"Nilai : " <<NILAI<<endl;
+    }
+};
+
+class guru{
+    public:
+        string NAMA;
+        int NUPTK;
+        string MAPEL;
+    void printguru(){
+        cout<<"Masukkan Nama : ";cin>>NAMA;
+        cout<<"Masukkan NUPTK : ";cin>>NUPTK;
+        cout<<"Masukkan Mata Pelajaran : "; cin>>MAPEL;
+    }
+    void printdataguru(){
+        cout<<"Nama : "<<NAMA<<endl;
+        cout<<"NUPTK : "<<NUPTK<<endl;
+        cout<<"Guru Mata Pelajaran : "<<MAPEL<<endl;
+    }
+};
+
+int main(){
+    int angka;
+    cout<<"Masukkan Angka (1 = murid, 2 = guru): "; cin>>angka;
+    if (angka == 1){
+        siswa cekmurid;
+        cekmurid.printmurid();
+        cekmurid.printdatamurid();
+    }
+    else if (angka == 2){
+        guru cekguru;
+        cekguru.printguru();
+        cekguru.printdataguru();
+    }
+    else{
+        cout<<"Masukkan Angka Dengan Benar";
+    }
+
+
+}
